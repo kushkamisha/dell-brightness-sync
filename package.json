@@ -4,10 +4,23 @@
   "description": "A zero-dependency CLI tool to automatically sync an external Dell monitor's brightness with the Mac's built-in display using m1ddc on Apple Silicon.",
   "keywords": [
     "dell",
-    "monitor",
     "brightness",
-    "m1ddc",
-    "macOS"
+    "monitor",
+    "sync",
+    "macbook",
+    "apple-silicon",
+    "m1",
+    "m2",
+    "m3",
+    "m4",
+    "ddc",
+    "ddc-ci",
+    "external-monitor",
+    "macos",
+    "cli",
+    "brightness-control",
+    "monitor-control",
+    "display-brightness"
   ],
   "homepage": "https://github.com/kushkamisha/dell-brightness-sync#readme",
   "bugs": {
