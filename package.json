@@ -1,0 +1,26 @@
+{
+  "name": "dell-monitor-brightness-adjustment",
+  "version": "1.0.0",
+  "description": "A zero-dependency CLI tool to automatically sync an external Dell monitor's brightness with the Mac's built-in display using m1ddc on Apple Silicon.",
+  "main": "src/index.js",
+  "bin": {
+    "dell-brightness-sync": "src/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --check src/index.js",
+    "pm2:start": "npx pm2 start src/index.js --name 'dell-brightness-sync'",
+    "pm2:stop": "npx pm2 stop dell-brightness-sync",
+    "pm2:startup": "npx pm2 startup && npx pm2 save"
+  },
+  "keywords": [
+    "dell",
+    "monitor",
+    "brightness",
+    "m1ddc",
+    "macOS"
+  ],
+  "author": "Misha Kushka",
+  "license": "MIT"
+}
