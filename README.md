@@ -1,5 +1,14 @@
 # Dell Monitor Brightness Sync
 
+## TL;DR Automatic Setup
+Just want it to work instantly? Run this script in your terminal to automatically install prerequisites, the package globally, and set it up to run in the background forever using PM2:
+```bash
+bash <(curl -sL https://raw.githubusercontent.com/kushkamisha/dell-brightness-sync/main/install.sh)
+```
+*(Remember to replace the GitHub repository URL above after you push your code!)*
+
+## Overview
+
 A lightweight, **zero-dependency** Node.js CLI tool that automatically synchronizes the brightness of your external Dell monitor with your MacBook's built-in display. Built specifically for Apple Silicon Macs.
 
 It runs quietly in the background, checking your built-in screen's brightness. When you adjust your MacBook's brightness using the keyboard, the external monitor will smoothly transition to match it!
@@ -15,27 +24,27 @@ This tool relies on macOS's native `corebrightnessdiag` for sensing the built-in
    brew install m1ddc
    ```
 
-## Installation
+## Manual Installation
 
 You can run this directly without installing it globally, or install it on your system for continuous background use.
 
 ### Option 1: Run via npx (No install required)
 ```bash
-npx dell-monitor-brightness-adjustment
+npx @mkushka/dell-brightness-sync
 ```
 
 ### Option 2: Install Globally
 ```bash
-npm install -g dell-monitor-brightness-adjustment
+npm install -g @mkushka/dell-brightness-sync
 ```
 Then run simply:
 ```bash
 dell-brightness-sync
 ```
 
-## Running in the Background (Recommended)
+## Manual Background Daemon Setup (PM2)
 
-To keep this running silently at all times, we recommend using PM2.
+If you didn't use the TL;DR script, we recommend using PM2 to keep it running silently at all times:
 
 ```bash
 # Start the background sync daemon
