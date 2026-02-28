@@ -5,7 +5,6 @@ Just want it to work instantly? Run this script in your terminal to automaticall
 ```bash
 bash <(curl -sL https://raw.githubusercontent.com/kushkamisha/dell-brightness-sync/main/install.sh)
 ```
-*(Remember to replace the GitHub repository URL above after you push your code!)*
 
 ## Overview
 
