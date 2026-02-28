@@ -2,6 +2,7 @@
 
 ## TL;DR Automatic Setup
 Just want it to work instantly? Run this script in your terminal to automatically install prerequisites, the package globally, and set it up to run in the background forever using PM2:
+
 ```bash
 bash <(curl -sL https://raw.githubusercontent.com/kushkamisha/dell-brightness-sync/main/install.sh)
 ```
